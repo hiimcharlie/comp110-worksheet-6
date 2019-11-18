@@ -116,10 +116,10 @@ namespace comp110_worksheet_6_tests
 
 				Assert.IsTrue(board.SetSquare(x2, y, p2));
 				Assert.AreEqual(board.GetWinner(), Mark.None);
-
-				Assert.IsTrue(board.SetSquare(x, 2, p1));
-				Assert.AreEqual(board.GetWinner(), p1);
 			}
+
+			Assert.IsTrue(board.SetSquare(x, 2, p1));
+			Assert.AreEqual(board.GetWinner(), p1);
 		}
 
 		[Test]
@@ -133,17 +133,17 @@ namespace comp110_worksheet_6_tests
 
 			var board = new OxoBoard();
 
-			for (int x = 0; x < 2; y++)
+			for (int x = 0; x < 2; x++)
 			{
 				Assert.IsTrue(board.SetSquare(x, y, p1));
 				Assert.AreEqual(board.GetWinner(), Mark.None);
 
 				Assert.IsTrue(board.SetSquare(x, y2, p2));
 				Assert.AreEqual(board.GetWinner(), Mark.None);
-
-				Assert.IsTrue(board.SetSquare(2, y, p1));
-				Assert.AreEqual(board.GetWinner(), p1);
 			}
+
+			Assert.IsTrue(board.SetSquare(2, y, p1));
+			Assert.AreEqual(board.GetWinner(), p1);
 		}
 
 		[Test]
@@ -197,10 +197,10 @@ namespace comp110_worksheet_6_tests
 			Mark p = Mark.O;
 
 			var moves = new int[,] { {1, 1}, {0, 0}, {1, 2}, {1, 0}, {2, 0}, {0, 2}, {0, 1}, {2, 1} };
-			for (int i=0; i<moves.GetLength(1); i++)
+			for (int i=0; i<moves.GetLength(0); i++)
 			{
-				int x = moves[0, i];
-				int y = moves[1, i];
+				int x = moves[i, 0];
+				int y = moves[i, 1];
 
 				Assert.IsTrue(board.SetSquare(x, y, p));
 				Assert.AreEqual(board.GetWinner(), Mark.None);

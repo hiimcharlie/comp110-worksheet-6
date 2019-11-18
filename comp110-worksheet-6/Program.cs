@@ -44,6 +44,7 @@ namespace comp110_worksheet_6
 			while (!gameIsOver)
 			{
 				// Print board
+				Console.WriteLine();
 				board.PrintBoard();
 				Console.WriteLine("Player turn: {0}", currentPlayer);
 
@@ -78,7 +79,14 @@ namespace comp110_worksheet_6
 						gameIsOver = true;
 					}
 				}
+				else
+				{
+					Console.WriteLine("Invalid move!");
+				}
 			}
+
+			Console.WriteLine("Press enter to continue");
+			Console.ReadLine();
 		}
 	}
 }
