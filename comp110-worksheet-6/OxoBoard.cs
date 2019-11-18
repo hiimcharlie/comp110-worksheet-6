@@ -11,8 +11,8 @@ namespace comp110_worksheet_6
 	public class OxoBoard
 	{
 		// Constructor. Perform any necessary data initialisation here.
-		// Uncomment the optional width and height parameters if attempting the stretch goal.
-		public OxoBoard(/* int width = 3, int height = 3 */)
+		// Uncomment the optional parameters if attempting the stretch goal -- keep the default values to avoid breaking unit tests.
+		public OxoBoard(/* int width = 3, int height = 3, int inARow = 3 */)
 		{
 			throw new NotImplementedException("TODO: implement this function and then remove this exception");
 		}
