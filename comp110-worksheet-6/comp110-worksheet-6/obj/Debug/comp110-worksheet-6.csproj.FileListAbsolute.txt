@@ -1,0 +1,6 @@
+U:\comp110-worksheet-6\comp110-worksheet-6\bin\Debug\comp110-worksheet-6.exe.config
+U:\comp110-worksheet-6\comp110-worksheet-6\bin\Debug\comp110-worksheet-6.exe
+U:\comp110-worksheet-6\comp110-worksheet-6\bin\Debug\comp110-worksheet-6.pdb
+U:\comp110-worksheet-6\comp110-worksheet-6\obj\Debug\comp110-worksheet-6.csprojAssemblyReference.cache
+U:\comp110-worksheet-6\comp110-worksheet-6\obj\Debug\comp110-worksheet-6.exe
+U:\comp110-worksheet-6\comp110-worksheet-6\obj\Debug\comp110-worksheet-6.pdb
